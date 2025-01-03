@@ -28,7 +28,7 @@ jobs:
         context: ./frontend
         file: ./frontend/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-frontend:latest
+        tags: Pechys/portfolio-frontend:latest
 
     - name: Build and push Backend
       uses: docker/build-push-action@v5
@@ -36,4 +36,4 @@ jobs:
         context: ./backend
         file: ./backend/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-backend:latest
+        tags: Pechys/portfolio-backend:latest
