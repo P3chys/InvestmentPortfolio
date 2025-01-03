@@ -28,7 +28,7 @@ jobs:
         context: ./frontend
         file: ./frontend/Dockerfile
         push: true
-        tags: Pechys/portfolio-frontend:latest
+        tags: docker.io/pechys/portfolio-frontend:latest
 
     - name: Build and push Backend
       uses: docker/build-push-action@v5
@@ -36,4 +36,4 @@ jobs:
         context: ./backend
         file: ./backend/Dockerfile
         push: true
-        tags: Pechys/portfolio-backend:latest
+        tags: docker.io/pechys/portfolio-backend:latest
