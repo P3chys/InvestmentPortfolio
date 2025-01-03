@@ -28,7 +28,6 @@ async def lifespan(app: FastAPI):
     app.mongodb_client.close()
     print("MongoDB connection closed")
 
-
 # Create FastAPI app with lifespan handler
 app = FastAPI(lifespan=lifespan)
 
